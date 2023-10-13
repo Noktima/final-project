@@ -1,14 +1,21 @@
 import './App.css';
-import HomePage from './components/Main/HomePage';
-import TestApi from './components/TestApi/TestApi';
+import Header from './components/Header/Header';
+
+import Main from './components/Main/Main';
+
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
-      <TestApi />
+      <div>
+          <Header />
+      </div>
+      <div>
+      <Main />
+      </div>
     </div>
   );
 }

@@ -10,16 +10,20 @@ const ApiTest = () => {
 
 
 
-  fetch(url)
-  .then((response) => response.json())
-  .then(response =>{
-    console.log(response)
-  });
+    fetch(url)
+     .then((response) => response.json())
+     .then(response =>{
+       console.log(response)
+     });
+
+ 
   
     })
     
     return (
-        <div>ApiTest</div>
+        <div>
+            TestApi
+        </div>
     )
 }
 
