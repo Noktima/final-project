@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-
+import Styles from './App.css'
 import Main from './components/Main/Main';
 
 
@@ -10,10 +10,10 @@ import Main from './components/Main/Main';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div id='header'>
           <Header />
       </div>
-      <div>
+      <div id='main'>
       <Main />
       </div>
     </div>

@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import styles from './style.Home.css'
 
 
 
 
 
 let isAuthenticated = localStorage.getItem('isAuthenticated');
-let username = localStorage.getItem('username')
 
 
 
@@ -20,12 +20,13 @@ const HomePage = () => {
 
 
     const Login = () => {
-        if(username != '') {
+        if(username != "") {
+            console.log(inputUsername)
             setUsername(inputUsername)
 
             isAuthenticated = true
             localStorage.setItem('isAuthenticated', true);
-            localStorage.setItem('username', username)
+            localStorage.setItem('username', inputUsername)
 
         } else {
             console.log('Введите данные')
@@ -44,17 +45,18 @@ const HomePage = () => {
             return (
         <div>
             {username && (
-            <div>
-                <div>Приветствуем вас, уважаемый <b>{username}</b></div>
-                <button onClick={Logout}>Выйти</button>
+            <div className="home">
+                <div className="textHomePage" id='hello'>Приветствуем вас, уважаемый <b>{username}</b></div>
+                <Link to='/Chat' ><div className="chatLink">Перейти к чату</div></Link>
+                <button className="homePageButton" id='logoutButton' onClick={Logout}>Выйти</button>
             </div>
             )}
 
             {!username && (
-            <div>
-                <label>Введите имя:</label>
-                <input name='inputName' value={username} onChange={(event) => setInputUsername(event.target.value)} />
-                <button onClick={Login}> <Link>Сохранить имя</Link></button>
+            <div className="home">
+                <label className="textHomePage">Введите имя:</label>
+                <input id='nameInput' name='inputName' value={inputUsername} onChange={(e) => setInputUsername(e.target.value)} />
+                <button className="homePageButton" id='loginButton' onClick={Login}> Сохранить имя</button>
             </div>
             )}
 

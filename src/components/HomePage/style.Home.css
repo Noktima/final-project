@@ -1,0 +1,60 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textHomePage {
+    text-align: center;
+    font-size: 3.5vh;
+}
+
+
+#nameInput {
+    width: 15%;
+    font-size: large;
+}
+
+.homePageButton {
+    width: 10%;
+    height: 5vh;
+    font-size: larger;
+}
+
+#loginButton {
+    background-color: #43e63b;
+}
+
+#loginButton:hover {
+    background-color: #31ac2a;
+    tansition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear; 
+}
+
+#logoutButton {
+    background-color: rgb(210, 0, 0);
+}
+
+#logoutButton:hover {
+    background-color: rgb(180, 0, 0);
+    tansition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear; 
+}
+
+#toChatButton {
+    background-color: azure;
+}
+
+#toChatButton:hover {   
+    background-color: rgb(184, 184, 184);
+    tansition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear; 
+}
+
+#chatLink {
+    font-size: large;
+}

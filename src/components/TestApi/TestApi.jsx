@@ -6,18 +6,21 @@ const ApiTest = () => {
     const [apiData, setApiData] = useState([])
 
     useEffect(() => {
-        const url = 'https://api.publicapis.org/entries';
+        const url = 'https://catfact.ninja/fact';
+
 
 
 
     fetch(url)
      .then((response) => response.json())
      .then(response =>{
-       console.log(response)
+       console.log(response)   
      });
 
+
  
-  
+
+     
     })
     
     return (

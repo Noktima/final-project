@@ -1,4 +1,38 @@
-.header {
+#header {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: 55px;
+    background-color: #00a4ad;
+}
+
+#list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    width: 5%;
+    height: 50%;
+    text-align: center;
+    align-content: center;
+    background-color: #00b7c3;
+}
+
+.link:hover {
+    background-color: #16bac3;
+    border-radius: 1px;
+    border-color: black;
+    border: solid;
+    tansition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear; 
 }
